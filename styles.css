@@ -1,0 +1,32 @@
+.lat-prod{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center
+}
+
+.lat-prod img {
+    width: 230px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.lat-item {
+    width: 240px;
+    background-color: rgb(218, 190, 190);
+    border-radius: 10px;
+}
+
+.lat-desc {
+    padding: 10px;
+
+}
+
+.lat-desc span{
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    padding: 6px
+
+}

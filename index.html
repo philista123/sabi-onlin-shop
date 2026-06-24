@@ -2,23 +2,68 @@
 <html>
   <head>
     <title>Sabi online shop</title>
+    <style>
+      .hero-section{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 10px;
+        justify-content: center;
+      }
+
+      .hero-img img{
+        width: 100px;
+        height: 500px;
+        object-fit: cover;
+        border-color: rgb(64, 212, 121);
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 35px;
+      }
+
+      .hero-text{
+        width: 500px;
+      }
+    </style>
+
+    <link rel="stylesheet" href="./styles.css" />    
   </head>
 
-  <body>
-    <header>
-      <p>Call us: +254 700 000 000</p>
-      <p>WhatsApp: +254 700 000 000</p>
+  <body style="font-family: sans-serif;">
+    <!--HEADER-->
+    <header style="display: flex; gap: 20px">
+      <p>Call us: 0700000000</p>
+      <p>Call us: 0700000000</p>
+      <p>WhatsApp: 0700000000</p>
       <p>Email: info@sabionlineshop.com</p>
+      
     </header>
-
-    <nav>
+    <!--NAVIGATION BAR-->            
+    <nav 
+      style="display: flex;
+      justify-content: space-between; 
+      align-items: center; 
+      background-color: gray;
+      padding: 10px;
+      color:black"
+    >
 
       <div>
-        <img src="./SabiLogo.png" alt="Sabi Online Shop Logo" />
+        <img 
+        src="./sabilogo.jpeg" 
+        alt="Sabi Online Shop Logo"  
+        style="
+          width: 100px;
+          border-color: rgb(230, 89, 89);
+          border-width: 1px;
+          border-style: solid;
+          margin: 10px;
+          border-radius: 50px"     
+        />
       </div>
     
       <div>
-        <ul> 
+        <ul style="display: flex; gap: 20px; list-style: none; font-size: 18px;"> 
           <li>Home</li> 
           <li>Products</li>
           <li>About Us</li>
@@ -31,20 +76,93 @@
       </div>
       
     </nav>
-    <section> 
+    <!--HERO SECTION-->
+    <section class="hero-section"> 
       <div> 
-        <img src="./Sabidress.webp" alt="Custom tailored Dress" /> 
+        <img 
+        src="./Sabidress.webp" 
+        alt="Custom tailored Dress" 
+        style="display: flex;
+        width: 200px;
+        height: 200px;
+        align-content: center;
+        border-radius: 55px;
+        border-color: rgb(197, 50, 24);
+        border-style: solid;
+        margin: 30px"/> 
       </div>
-      <div>
+      <div class="hero-text">
         <h2>Custom Tailored Dress</h2>
         <p>
-
           Welcome to Sabi Online Shop, your premier destination for custom tailored dresses. 
           We specialize in creating unique and personalized dresses that are designed to fit you perfectly. 
-          
         </p>
 
         <button>Get started</button>
+      </div>
+    </section>
+  
+    <!--LATEST PRODUCT-->
+    <section class="lat-prod">
+    <!--Product one--> 
+      
+      <div class="lat-item">
+        <div>
+          <img src="./whitedress.jpeg" alt="Product one">
+        </div>
+        <div class="lat-desc"> 
+          <h4>White cotton party dress </h4>
+          <p>One of the luxurious dresses around town, it was one of the dresses the first lady of uganda used to wear</p>
+          <p>
+            <span>$5000</span>          
+            <span>Buy Now</span>
+          </p>
+        </div>
+      </div>
+    <!--Product Two-->  
+      <div class="lat-item">
+        <div>
+          <img src="./polo t-shirt.jpeg" alt="Product Two">
+        </div>
+        <div class="lat-desc">
+          <h4>Polo Golf T-shirt</h4>
+          <p>One of the luxurious T-shirt around town, it was one of the T-shirts the Presdent of America used to wear to play games</p>
+          <p>
+            <span>$400</span>          
+            <span>Buy Now</span>
+          </p>
+        </div>
+      </div>
+
+
+      <!--Product Three-->
+      <div class="lat-item">
+        <div>
+          <img src="./adidasshoes.jpeg" alt="Product Three">
+        </div>
+        <div class="lat-desc">
+          <h4>Adidas Shoes</h4>
+          <p>These are the shoes that the legend Baloteli used to score most of his goals</p>
+          <p>
+            <span>$700</span>          
+            <span>Buy Now</span>
+          </p>
+        </div>
+      </div>
+
+      <!--Product Four-->  
+      <div class="lat-item">
+        <div>
+          <img src="./polo t-shirt.jpeg" alt="Product Two">
+        </div>
+        <div class="lat-desc">
+          <h4>Polo Golf T-shirt</h4>
+          <p>One of the luxurious T-shirt around town, it was one of the T-shirts the Presdent of America used to wear to play games</p>
+          <p>
+            <span>$400</span>          
+            <span>Buy Now</span>
+          </p>
+        </div>
       </div>
     </section>
   </body>
