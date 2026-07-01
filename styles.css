@@ -48,16 +48,24 @@
 
 
 
-
+.hero-section {
+    display: flex;
+    justify-items: center;
+    gap: 25px;
+    align-items: center;
+    padding: 10px    
+}
 
 .fir-prod{
     display: flex;
+    object-fit: cover;
     justify-content: center;
-    gap: 10px;
+    gap: 25px;
     align-items: center
 }
 
 .fir-prod img {
+    flex-direction: column;
     width: 230px;
     height: 300px;
     object-fit: cover;
@@ -80,17 +88,32 @@
 .fir-desc span{
     border-color: black;
     border-width: 1px;
+    gap: 25px;
+    justify-content: space-between;
     border-style: solid;
     padding: 6px
 
 }
 
+.nav-img {
+    width: 200px;
+}
 
+h3{
+    justify-content: space-between;
+    
+
+}
 
 
 @media  (max-width: 376px){
     .nav-elem {
         display: none
+    }
+
+    .nav-img {
+        width: 300px;
+        
     }
 
     .hero-section{
